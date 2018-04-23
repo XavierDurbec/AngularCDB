@@ -4,9 +4,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {ComputerComponent} from './computer/computer.component';
-import {CompanyComponent} from './company/company.component';
 import {FormsModule} from '@angular/forms';
-import {CompanyDetailComponent} from './company-detail/company-detail.component';
 import {CompanyService} from './company.service';
 import {MessagesComponent} from './messages/messages.component';
 import {MessageService} from './message.service';
@@ -18,8 +16,6 @@ import {DashboardComponent} from './dashboard/dashboard.component';
   declarations: [
     AppComponent,
     ComputerComponent,
-    CompanyComponent,
-    CompanyDetailComponent,
     MessagesComponent,
     DashboardComponent
   ],

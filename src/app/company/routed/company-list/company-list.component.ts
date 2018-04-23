@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import {COMPANIES} from './mockCompany';
-import {Company} from '../model/company';
-import {CompanyService} from '../company.service';
+import {COMPANIES} from '../../mockCompany';
+import {Company} from '../../../model/company';
+import {CompanyService} from '../../../company.service';
 
 @Component({
   selector: 'app-company',
-  templateUrl: './company.component.html',
-  styleUrls: ['./company.component.scss']
+  templateUrl: './company-list.component.html',
+  styleUrls: ['./company-list.component.scss']
 })
-export class CompanyComponent implements OnInit {
+export class CompanyListComponent implements OnInit {
 
   listCompany = COMPANIES;
   companies: Company[];
