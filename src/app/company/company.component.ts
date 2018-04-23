@@ -12,23 +12,16 @@ export class CompanyComponent implements OnInit {
 
   listCompany = COMPANIES;
   companies: Company[];
-  selectedCompany: Company;
 
   constructor(private companyService: CompanyService) {
   }
 
-
   ngOnInit() {
-//  Reserve the constructor for simple initialization such as wiring constructor parameters to properties.
-//  The constructor shouldn't do anything.
-//  It certainly shouldn't call a function that makes HTTP requests to a remote server as a real data service would.
-
-    this.getHeroes();
+    this.getCompanies();
   }
 
-  getHeroes(): void {
+  getCompanies(): void {
     this.companyService.getCompanies().subscribe(companies => this.companies = companies);
   }
-
 
 }
