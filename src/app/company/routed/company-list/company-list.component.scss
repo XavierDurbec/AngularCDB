@@ -2,7 +2,13 @@
 .selected {
   background-color: #CFD8DC !important;
   color: white;
+  text-decoration: none;
 }
+a{
+  text-decoration: none;
+}
+a:visited {color:#607D8B;}  /* visited link */
+a:hover {color:#607D8B;}  /* mouse over link */
 .companies {
   margin: 0 0 2em 0;
   list-style-type: none;
@@ -31,6 +37,7 @@
 .companies .text {
   position: relative;
   top: -3px;
+  text-decoration: none;
 }
 .companies .entity {
   display: inline-block;
@@ -45,4 +52,5 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+
 }

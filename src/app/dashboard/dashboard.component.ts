@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Company} from '../model/company';
 import {CompanyService} from '../company.service';
+import {COMPANIES} from '../company/mockCompany';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,7 @@ import {CompanyService} from '../company.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
+  listCompany = COMPANIES;
   companies: Company[] = [];
 
   constructor(private companyService: CompanyService) {
@@ -19,6 +20,6 @@ export class DashboardComponent implements OnInit {
   }
 
   getCompanies(): void {
-    this.companyService.getCompanies().subscribe(companies => this.companies.slice(1, 5));
+    this.companyService.getCompanies().subscribe(companies => this.companies = companies);
   }
 }
