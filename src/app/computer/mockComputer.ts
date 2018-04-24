@@ -1,5 +1,5 @@
 import {Computer} from '../model/computer';
-import {COMPANIES} from '../company/mockCompany';
+import {COMPANIES} from '../company/company.component.mock';
 
 
 export const COMPUTERS: Computer[] = [

@@ -13,16 +13,13 @@ a:hover {color:#607D8B;}  /* mouse over link */
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  width: 25em;
 }
 .companies li {
   cursor: pointer;
-  position: relative;
-  left: 0;
   background-color: #EEE;
   margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
+  height: 2rem;
   border-radius: 4px;
 }
 .companies li.selected:hover {
@@ -46,11 +43,39 @@ a:hover {color:#607D8B;}  /* mouse over link */
   padding: 0.8em 0.7em 0 0.7em;
   background-color: #607D8B;
   line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 
+}
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  background-color: gray !important;
+  color: white;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 20rem;
+    white-space: nowrap;
+  }
 }

@@ -1,6 +1,18 @@
+<h2> Companies </h2>
+<!--<mat-slide-toggle-->
+  <!--class="example-margin"-->
+  <!--[color]="color"-->
+  <!--[checked]="checked"-->
+  <!--[disabled]="disabled">-->
+  <!--Slide me!-->
+<!--</mat-slide-toggle>-->
 <div class="grid grid-pad">
   <a *ngFor="let company of companies" class="col-1-4" routerLink="/detail/{{company.id}}">
     <div class="module companies">
+      <div class="list-button">
+        <button>Modifier</button>
+        <button>Supprimer</button>
+      </div>
       <h4>{{company.name}}</h4>
     </div>
   </a>

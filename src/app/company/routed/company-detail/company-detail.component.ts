@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {Location} from '@angular/common';
 import {Company} from '../../../model/company';
 import {ActivatedRoute} from '@angular/router';
@@ -32,4 +32,7 @@ export class CompanyDetailComponent implements OnInit {
     this.location.back();
   }
 
+  save(): void {
+    this.companyService.update(this.company).subscribe(error => console.log(this.company));
+  }
 }

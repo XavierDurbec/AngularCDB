@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Company} from '../model/company';
 import {CompanyService} from '../company.service';
-import {COMPANIES} from '../company/mockCompany';
+import {COMPANIES} from '../company/company.component.mock';
 
 @Component({
   selector: 'app-dashboard',
