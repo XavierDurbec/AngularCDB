@@ -1,11 +1,16 @@
-<h2>Add Company</h2>
+<div class="label-add" >
+<h2 >Add Company</h2>
+</div>
 <div>
-  <label>Computer name:
-    <input #companyName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(companyName.value); companyName.value=''">
+  <form >
+  <p>
+<mat-form-field>
+  <input matInput placeholder="Company Name" #companyName  />
+</mat-form-field>
+  </p>
+    <button (click)="add(companyName.value); companyName.value=''">
     add
   </button>
+  </form>
 </div>
 

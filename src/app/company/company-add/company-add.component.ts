@@ -31,6 +31,6 @@ export class CompanyAddComponent implements OnInit {
       return;
     }
     this.companyService.add({name} as Company)
-      .subscribe(() => this.router.navigate(['/dashboard']));
+      .subscribe(() => this.router.navigate(['dashboard']));
   }
 }

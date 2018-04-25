@@ -15,8 +15,8 @@ import {CompanyDetailComponent} from './company/company-detail/company-detail.co
 import {CompanyAddComponent} from './company/company-add/company-add.component';
 import {
   MatButtonModule,
-  MatButtonToggleModule,
-  MatIconModule,
+  MatButtonToggleModule, MatCardModule,
+  MatIconModule, MatInputModule,
   MatNativeDateModule,
   MatSidenavModule,
   MatToolbarModule
@@ -45,7 +45,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule
 
   ],
   exports: [
@@ -54,7 +56,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatNativeDateModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [CompanyService, MessageService],
   bootstrap: [AppComponent]

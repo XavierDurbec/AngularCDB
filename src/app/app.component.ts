@@ -8,7 +8,7 @@ import {CompanyService} from './company.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Computer Database';
+  title = 'Company Database';
   companies: Company[];
 
   constructor(private companyService: CompanyService) {

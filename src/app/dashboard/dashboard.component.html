@@ -11,13 +11,14 @@
   </a>
 </nav>
   <div class="grid grid-pad">
-    <a *ngFor="let company of companies" class="col-1-4" routerLink="/company/detail/{{company.id}}">
-      <div class="module companies">
+    <a *ngFor="let company of companies" class="col-1-4" >
+      <div class="module companies" routerLink="/company/detail/{{company.id}}">
         <div class="list-button">
           <button mat-icon-button (click)="delete(company)" > <mat-icon>delete </mat-icon> </button>
         </div>
         <h4>{{company.name}}</h4>
       </div>
+
     </a>
   </div>
 </mat-drawer-container>

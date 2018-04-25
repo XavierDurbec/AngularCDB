@@ -1,5 +1,19 @@
 /* HeroesComponent's private CSS styles */
-
+$main-color: #e3dde0;
+$second-color: rgba(96, 125, 139, 0.67);
+.label-add{
+  text-align: center;
+  background-color: #607D8B;
+  padding-left: 50px;
+  padding-right: 50px;
+  h2{
+    color: #eeeeee;
+    width:100%;
+  }
+}
+.label-input-add{
+  color:#444444;
+}
 .selected {
   background-color: #CFD8DC !important;
   color: white;
@@ -50,11 +64,10 @@ a:hover {color:#607D8B;}  /* mouse over link */
 
 }
 button {
-  background-color: #eee;
+  background-color: $second-color;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
-  cursor: pointer;
   cursor: hand;
   font-family: Arial;
 }
