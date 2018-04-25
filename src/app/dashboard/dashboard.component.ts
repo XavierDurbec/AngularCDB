@@ -22,4 +22,9 @@ export class DashboardComponent implements OnInit {
   getCompanies(): void {
     this.companyService.getCompanies().subscribe(companies => this.companies = companies);
   }
+  delete(company: Company): void {
+    this.companies = this.companies.filter(h => h !== company);
+    this.companyService.delete(company).subscribe();
+  }
+
 }

@@ -4,13 +4,24 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {ComputerComponent} from './computer/computer.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CompanyService} from './company.service';
 import {MessagesComponent} from './messages/messages.component';
 import {MessageService} from './message.service';
 import {AppRoutingModule} from './app-routing.module';
-import {DashboardComponent} from './dashboard/dashboard.component';
 import {HttpClientModule} from '@angular/common/http';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {CompanyDetailComponent} from './company/company-detail/company-detail.component';
+import {CompanyAddComponent} from './company/company-add/company-add.component';
+import {
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatIconModule,
+  MatNativeDateModule,
+  MatSidenavModule,
+  MatToolbarModule
+} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -18,13 +29,32 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     ComputerComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    CompanyDetailComponent,
+    CompanyAddComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonToggleModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatButtonModule
+
+  ],
+  exports: [
+    MatIconModule,
+    MatToolbarModule,
+    MatNativeDateModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [CompanyService, MessageService],
   bootstrap: [AppComponent]

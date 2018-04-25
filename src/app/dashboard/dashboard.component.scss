@@ -1,37 +1,49 @@
 /* DashboardComponent's private CSS styles */
 [class*='col-'] {
   float: left;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
+
 [class*='col-']:last-of-type {
   padding-right: 0;
 }
+$main-color: #e3dde0;
+$second-color: rgba(96, 125, 139, 0.67);
 a {
   text-decoration: none;
 }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 h3 {
-  text-align: center; margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 0;
 }
+
 h4 {
   position: relative;
 }
+
 .grid {
-  margin: 0;
+  margin: auto;
+  width: 80%;
 }
+
 .col-1-4 {
   width: 25%;
 }
+
 .module {
   padding: 20px;
   text-align: center;
   color: #eee;
-  height: 120px;
+  height: 130px;
+  font-size: 20px;
   background-color: #607D8B;
   border-radius: 2px;
   position: relative;
@@ -43,22 +55,28 @@ h4 {
     display: block;
   }
 }
+
 .module:hover {
-  background-color: #EEE;
+  background-color: #e3dde0;
   cursor: pointer;
   color: #607d8b;
 }
+
 .grid-pad {
-  padding: 10px 0;
+  padding: 25px 0;
 }
+
 .grid-pad > [class*='col-']:last-of-type {
   padding-right: 20px;
 }
+
 @media (max-width: 600px) {
   .module {
     font-size: 10px;
-    max-height: 75px; }
+    max-height: 75px;
+  }
 }
+
 @media (max-width: 1024px) {
   .grid {
     margin: 0;
@@ -71,7 +89,67 @@ h4 {
 .list-button {
   display: none;
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 1rem;
+  right: 1rem;
+}
 
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+nav .button-nav {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 10%;
+  display: inline-block;
+  background-color: #607d8b;
+  border-radius: 4px;
+  align-content: center;
+  text-align: center;
+  color: $main-color;
+
+}
+
+nav .button-nav:visited, .button-nav:link {
+  text-decoration: none;
+
+}
+
+nav .button-nav:hover {
+  background-color: #e3dde0;
+  text-decoration: none;
+  color: $second-color;
+}
+
+nav .button-nav.active {
+
+  text-decoration: none;
+}
+
+nav {
+  margin-left: 50px;
+}
+
+.mat-driver {
+  position: fixed;
+}
+
+.icon-delete {
+  width: 20%;
+  height: 20%;
+}
+
+.example-container {
+  position: fixed;
+  padding: 2em;
+  background-color: #eee;
 }

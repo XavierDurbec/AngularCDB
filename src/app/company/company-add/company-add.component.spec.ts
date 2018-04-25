@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompanySharedComponent } from './company-shared.component';
+import { CompanyAddComponent } from './company-add.component';
 
-describe('CompanySharedComponent', () => {
-  let component: CompanySharedComponent;
-  let fixture: ComponentFixture<CompanySharedComponent>;
+describe('CompanyAddComponent', () => {
+  let component: CompanyAddComponent;
+  let fixture: ComponentFixture<CompanyAddComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CompanySharedComponent ]
+      declarations: [ CompanyAddComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CompanySharedComponent);
+    fixture = TestBed.createComponent(CompanyAddComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

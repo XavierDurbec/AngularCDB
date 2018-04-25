@@ -1,0 +1,11 @@
+<h2>Add Company</h2>
+<div>
+  <label>Computer name:
+    <input #companyName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(companyName.value); companyName.value=''">
+    add
+  </button>
+</div>
+

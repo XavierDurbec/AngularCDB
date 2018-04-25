@@ -1,19 +1,24 @@
-<h2> Companies </h2>
-<!--<mat-slide-toggle-->
-  <!--class="example-margin"-->
-  <!--[color]="color"-->
-  <!--[checked]="checked"-->
-  <!--[disabled]="disabled">-->
-  <!--Slide me!-->
-<!--</mat-slide-toggle>-->
-<div class="grid grid-pad">
-  <a *ngFor="let company of companies" class="col-1-4" routerLink="/detail/{{company.id}}">
-    <div class="module companies">
-      <div class="list-button">
-        <button>Modifier</button>
-        <button>Supprimer</button>
-      </div>
-      <h4>{{company.name}}</h4>
-    </div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container >
+  <mat-drawer #drawer class="example-container" mode="over">
+    <app-company></app-company>
+  </mat-drawer>
+<nav>
+  <a class="button-nav" routerLink="/dashboard">menu</a>
+  <a class="button-nav" (click)="drawer.toggle()">
+    add company
   </a>
-</div>
+</nav>
+  <div class="grid grid-pad">
+    <a *ngFor="let company of companies" class="col-1-4" routerLink="/company/detail/{{company.id}}">
+      <div class="module companies">
+        <div class="list-button">
+          <button mat-icon-button (click)="delete(company)" > <mat-icon>delete </mat-icon> </button>
+        </div>
+        <h4>{{company.name}}</h4>
+      </div>
+    </a>
+  </div>
+</mat-drawer-container>
+

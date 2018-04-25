@@ -5,7 +5,7 @@ h1 {
   font-size: 250%;
 }
 h2, h3 {
-  color: #444;
+  color: #444444;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
@@ -19,4 +19,56 @@ body, input[text], button {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+$main-color: #f2ecef;
+$second-color: rgba(96, 125, 139, 0.67);
+body{
+  background: #272727;
+  color: #FFF;
+}
+
+.skewed-bg{
+  background: $main-color;
+  padding: 100px 0;
+  transform: skew(0deg, -10deg);
+  margin-top: -100px;
+
+  .content{
+    transform: skew(0deg, 10deg);
+    //text-align: center;
+
+    .title{
+      padding-top: 100px;
+      font-weight: normal;
+      color:#222222;
+      font-size: xx-large;
+    }
+
+    .text{
+      width:60%;
+      margin: 25px auto;
+      color: lighten($main-color, 55);
+    }
+
+  }
+}
+
+.footer{
+  padding-top: 300px;
+
+  .credits{
+    text-align: center;
+    color: #666;
+
+    .link{
+      color: $second-color;
+      text-decoration: none;
+    }
+
+  }
+
 }
