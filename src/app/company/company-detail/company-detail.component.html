@@ -1,11 +1,17 @@
 <div *ngIf="company">
-  <h2>{{company.name | uppercase}}  Details </h2>
-  <div><span> id: </span> {{company.id}}</div>
-  <div>
-    <label>name:
-    <input [(ngModel)]="company.name" placeholder="name">
-    </label>
-  </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Edit Company : <h4>{{company.name | uppercase}}</h4></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <input [(ngModel)]="company.name" placeholder="name">
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="goBack()">go back</button>
+      <button (click)="save()">save</button>
+    </mat-card-actions>
+  </mat-card>
+
 </div>
+

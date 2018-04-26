@@ -1,4 +1,6 @@
 /* HeroDetailComponent's private CSS styles */
+$main-color: #e3dde0;
+$second-color: rgba(96, 125, 139, 0.67);
 label {
   display: inline-block;
   width: 3em;
@@ -6,25 +8,68 @@ label {
   color: #607D8B;
   font-weight: bold;
 }
+
 input {
   height: 2em;
   font-size: 1em;
-  padding-left: .4em;
+  padding-left: .8em;
+  width: 65%;
 }
 button {
-  margin-top: 20px;
-  font-family: Arial;
-  background-color: #eee;
+  position: relative;
+  background-color: $second-color;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer; cursor: hand;
+  margin-top:4em;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: hand;
+  color: #EEEEEE;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #d7d2d4;
+  color: #272727;
+
 }
 button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+.example-card {
+  margin-top: 2em;
+  margin-left: 12em;
+  max-width: 500px;
+ background-color: #ebe5e8;
+}
+mat-card-actions{
+  padding-top: 0;
+  padding-left: 25em;
+}
+mat-card-header{
+  height: 100px;
+}
+mat-card-subtitle{
+  position:relative;
+  z-index: 3;
+  padding-left: 25em;
+  margin-bottom: 50em;
+}
+mat-card-title{
+  color: #3a3a3a;
+  padding-top: 0;
+  padding-left: 5em;
+  display: inline-flex;
+  .h2{
+    color: #272727;
+  }
+}
+
+mat-card-content{
+  margin-bottom:0;
+}
+input{
+  margin-bottom: 0;
 }
