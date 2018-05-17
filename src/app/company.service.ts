@@ -6,7 +6,7 @@ import {MessageService} from './message.service';
 
 @Injectable()
 export class CompanyService {
-  urlApp = 'http://localhost:8080/webapp';
+  urlApp = 'http://10.0.1.87:8080/webapp';
 
   const;
   httpOptions = {
